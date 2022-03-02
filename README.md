@@ -20,4 +20,10 @@ Kodumuzu kemik tarafı böyle eğer bunları açıklayacak olursak **iostream** 
   
   ----
   
-  ## c++ dilinde yorum yazılması
+  ## c++ dilinde yorum yazılması :
+  
+ Yorum satırları : Eğer bir kod içersinde çalışmayacak  tek bir satıra yorum eklemek isterseniz  **//** işareti koymanız yeterli olur . Eğere çok satırlı bir yorum yapmka isterseniz :
+  /*
+  
+  */
+yapabilirsiniz bu size iki işaret arasına istediğiniz yorumu yazmanıza yardımcı olacaktır.
