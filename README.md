@@ -79,3 +79,59 @@ cout<<a<<" ile "<<b <<" sayisinin bolumu :  "<<a/b<<endl;
 cout<<a<<" ile "<<b <<" sayisinin carpimi :  "<<a*b<<endl;
 return 0;
 }
+  
+  
+----
+  
+## İf - Else yapıları :
+  
+  İf else yapsını  kısaca bir örnekle açıklayıp geçelim
+  
+  
+  #include <iostream>
+
+using namespace std;
+
+int main()
+{
+float vize1,vize2,vize3;
+float ortalama;
+cout<<"1.vize notunuzu giriniz :"<<endl;
+cin >>vize1;
+cout<<"2.vize notunuzu giriniz :"<<endl;
+cin >>vize2;
+cout<<"final notunuzu giriniz :"<<endl;
+cin >>vize3;
+ortalama=(vize1+vize2+vize3)/3;
+
+if(ortalama<50)
+{
+    cout<<"harf notunuz : 'F' "<<endl;
+}
+else if(ortalama>=50 && ortalama <70)
+{
+    cout<<"harf notunuz : 'C' "<<endl;
+}
+else if(ortalama >=70 && ortalama <90 )
+{
+     cout<<"harf notunuz : 'B' "<<endl;
+}
+else
+{
+     cout<<"harf notunuz : 'A' "<<endl;
+}
+
+return 0;
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
