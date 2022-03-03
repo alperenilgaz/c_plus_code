@@ -124,11 +124,92 @@ else
 return 0;
 }
 
+
+                                       
+---- 
+
+                                       
+  
+## Örnekler:
+                                       
+1)mesafe ve hızı istenen aracın gideceği yolun süresini hesaplamak ::
+                                       
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    int  mesafe,hiz;
+    int sure;
+    cout<<"aracinizin hizini giriniz :"<<endl;
+    cin >>hiz;
+    cout<<"alacaginiz mesafeyi giriniz"<<endl;
+    cin >>mesafe;
+    sure=mesafe/hiz;
+    cout<<"tahmini varis sureniz  : "<<sure;
+    int saat=mesafe/hiz;
+    float dakikaismi=(float)mesafe/hiz - (int)mesafe/hiz;
+    int dakika=dakikaismi*60;
+    cout<<"saat  ve "<<dakika<<" dir"<<endl;
+
+return 0;
+}
+
   
   
+2)  Klavyeden girilen 3 sayıdan en büyük ve en küçük sayıları bulan kodu yazın :
+                                       
   
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int a,b,c;
+cout<<"birinci sayiyi giriniz : "<<endl;
+cin >>a;
+cout<<"ikinci  sayiyi giriniz : "<<endl;
+cin >>b;
+cout<<"ucuncu sayiyi giriniz : "<<endl;
+cin >>c;
+if (a>b && a>c && b>c)
+{
+cout<<"birinci sayi en buyuktur."<<endl;
+cout<<"ucuncu sayi en kucukktur."<<endl;
+}
+else if(a>b && a>c && c>b)
+{
+cout<<"birinci sayi en buyuktur."<<endl;
+cout<<"ikinci sayi en kucukktur."<<endl;
+}
+if (b>a && b>c && a>c)
+{
+cout<<"ikinci sayi en buyuktur."<<endl;
+cout<<"ucuncu sayi en kucukktur."<<endl;
+}
+else if(b>a && b>c && c>a)
+{
+cout<<"ikinci sayi en buyuktur."<<endl;
+cout<<"birinci sayi en kucukktur."<<endl;
+}
+if (c>a && c>b && a>b)
+{
+cout<<"ucuncu sayi en buyuktur."<<endl;
+cout<<"ikinci sayi en kucukktur."<<endl;
+}
+else if(c>a && c>b && b>a)
+{
+cout<<"ucuncu sayi en buyuktur."<<endl;
+cout<<"birinci sayi en kucukktur."<<endl;
+}
+return 0;
+}
   
-  
+                                       
+                                       
   
   
   
