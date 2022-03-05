@@ -157,9 +157,9 @@ int main()
 return 0;
 }
 
+----  
   
-  
-2)  Klavyeden girilen 3 sayıdan en büyük ve en küçük sayıları bulan kodu yazın :
+örnek 2)  Klavyeden girilen 3 sayıdan en büyük ve en küçük sayıları bulan kodu yazın :
                                        
   
 #include <iostream>
@@ -207,9 +207,36 @@ cout<<"birinci sayi en kucukktur."<<endl;
 }
 return 0;
 }
+----
+                                       
+örnek 3) : Kullanıcıdan -1 girene kadar aldığınız sayıların ortalamasını bastıran programın kodunu yazınız
   
-                                       
-                                       
+  #include <iostream>
+
+using namespace std;
+
+int main()
+{
+int toplam=0;
+int sinav;
+int sayi=0;
+for(int i=0;sinav!=-1;i++)
+{
+
+    cout<<"sinav notunuzu giriniz "<<endl;
+    cin >>sinav;
+    if(sinav==-1)
+    {
+        break;
+    }
+    toplam+=sinav;
+    sayi++;
+
+}
+cout<<"ortalamaniz : "<<toplam/sayi<<endl;
+return 0;
+}
+----
   
   
   
